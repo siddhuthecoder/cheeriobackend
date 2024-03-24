@@ -1,11 +1,27 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const { Schema, model } = mongoose;
 
 const idSchema = new Schema({
   idNumber: {
     type: String,
     required: true,
-  }
+  },
+  name: {
+    type: String,
+    required: true,
+  },
+  email: {
+    type: String,
+    required: true,
+  },
+  isReg: {
+    type: Boolean,
+    default: false,
+  },
+  imgUpload: {
+    type: String,
+    default: "",
+  },
 });
 
-module.exports = model('Id', idSchema);
+module.exports = model("Id", idSchema);
