@@ -18,7 +18,7 @@ const idSchema = new Schema({
     type: Boolean,
     default: false,
   },
-  imgUpload: {
+  photo: {
     type: String,
     default: "",
   },

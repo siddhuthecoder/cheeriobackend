@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
-const rguktUser = require("./models/user");
 const Id = require("./models/id");
 
 const app = express();
@@ -22,14 +21,13 @@ app.post("/register/:id", async (req, res) => {
   const { photo } = req.body;
 
   try {
-    const disableReg = await Id.findOneAndUpdate(id, { isReg: true });
-    // const savedUser = await newUser.save();
-    // await sendRegistrationEmail(
-    //   (email = savedUser.rguktMail),
-    //   (id = savedUser.idNumber),
-    //   (Photo = savedUser.photo),
-    //   (Name = savedUser.name)
-    // );
+    const user = await Id.findByIdAndUpdate(id, { isReg: true, photo });
+    await sendRegistrationEmail({
+      email: user.email,
+      id: user.idNumber,
+      photo: user.photo,
+      name: user.name,
+    });
     res.status(201).json({ message: "Registration successful" });
   } catch (err) {
     console.error(err);
@@ -37,11 +35,9 @@ app.post("/register/:id", async (req, res) => {
   }
 });
 
-const sendRegistrationEmail = async (email, id, Photo, Name) => {
+const sendRegistrationEmail = async ({ email, id, photo, name }) => {
   try {
     const transporter = nodemailer.createTransport({
-      // For production
-      // For production
       host: "smtp.gmail.email",
       service: "gmail",
       auth: {
@@ -49,7 +45,6 @@ const sendRegistrationEmail = async (email, id, Photo, Name) => {
         pass: "htyd uyay dhxt eqmu",
       },
       tls: {
-        // do not fail on invalid certs
         rejectUnauthorized: false,
       },
     });
@@ -60,12 +55,10 @@ const sendRegistrationEmail = async (email, id, Photo, Name) => {
       to: email,
       subject: "Welcome to RGUKT Registration System",
       html: `
-            <h1>Naem :${Name}</h1>
+            <h1>Name :${name}</h1>
             <h1>id :${id}</h1>
-            <h1>emial :${email}</h1>
-            <img src=${Photo} alt="Preview" style={{width: '100px', height: '100px'}}>
-            
-            
+            <h1>email :${email}</h1>
+            <img src=${photo} alt="Preview" style={{width: '100px', height: '100px'}}>
             `,
     };
 
@@ -85,12 +78,12 @@ app.post("/add-id", async (req, res) => {
   }
 
   try {
-    await Id.create({
+    const user = await Id.create({
       idNumber,
       name,
       email,
     });
-    res.status(201).json({ message: "ID added successfully" });
+    res.status(201).json({ user, message: "ID added successfully" });
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: "Failed to add ID" });
