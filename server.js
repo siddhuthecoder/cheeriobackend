@@ -39,15 +39,51 @@ app.post("/register/:id", async (req, res) => {
     res.status(500).json({ message: "Registration failed" });
   }
 });
-
 const sendRegistrationEmail = async ({ email, id, photo, name }) => {
   try {
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.email",
       service: "gmail",
       auth: {
-        user: "flkarthikjidagam@gmail.com",
-        pass: "htyd uyay dhxt eqmu",
+        user: "codewithsiddhu@gmail.com",
+        pass: "mppd xlxb uoqj mymb",
+      },
+      tls: {
+        rejectUnauthorized: false,
+      },
+    });
+    
+    // Craft the email content
+    const mailOptions = {
+      
+      from: "noreply@gmail.com",
+      to: email,
+      subject: "Welcome to RGUKT Registration System",
+      html: `
+      <h1>Name :${name}</h1>
+      <h1>id :${id}</h1>
+      <h1>email :${email}</h1>
+      <img src=${photo} alt="Preview" style={{width: '100px', height: '100px'}}>
+      `,
+    };
+    
+    // Send the email
+    const info = await transporter.sendMail(mailOptions);
+    console.log("Email sent:", info.messageId);
+  } catch (error) {
+    console.error("Error sending email:", error);
+  }
+};
+
+const sendemail = async({email , idNumber , name , id})=>{
+  console.log(email, idNumber , name , id )
+  try {
+    const transporter = nodemailer.createTransport({
+      host: "smtp.gmail.email",
+      service: "gmail",
+      auth: {
+        user: "codewithsiddhu@gmail.com",
+        pass: "mppd xlxb uoqj mymb",
       },
       tls: {
         rejectUnauthorized: false,
@@ -62,9 +98,9 @@ const sendRegistrationEmail = async ({ email, id, photo, name }) => {
       subject: "Welcome to RGUKT Registration System",
       html: `
       <h1>Name :${name}</h1>
-      <h1>id :${id}</h1>
+      <a href='http:/localhost:5173/${id}'><button style={{width:'100px' }}>Click to register</button>
       <h1>email :${email}</h1>
-      <img src=${photo} alt="Preview" style={{width: '100px', height: '100px'}}>
+      <h1>email :${idNumber}</h1>
       `,
     };
 
@@ -74,8 +110,7 @@ const sendRegistrationEmail = async ({ email, id, photo, name }) => {
   } catch (error) {
     console.error("Error sending email:", error);
   }
-};
-
+}
 app.post("/add-id", async (req, res) => {
   const { idNumber, name, email } = req.body;
   const existingId = await Id.findOne({ idNumber });
@@ -89,7 +124,13 @@ app.post("/add-id", async (req, res) => {
       name,
       email,
     });
-    res.status(201).json({ user, message: "ID added successfully" });
+
+    await sendemail({
+      email: email,
+      idNumber: idNumber,
+      name: name,
+      id: user._id // Assuming user._id is the intended 'id'
+    }).then(() => res.status(201).json({ user, message: "ID added successfully" }));GIT
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: "Failed to add ID" });
