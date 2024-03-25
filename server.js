@@ -53,7 +53,7 @@ const sendRegistrationEmail = async ({ email, id, photo, name , qrCodeImage}) =>
       service: "gmail",
       auth: {
         user: "codewithsiddhu@gmail.com",
-        pass: "mppd xlxb uoqj mymb",
+        pass: "lnbe kvls fcvk cyti",
       },
       tls: {
         rejectUnauthorized: false,
@@ -90,7 +90,7 @@ const sendemail = async ({ email, idNumber, name, id }) => {
       service: "gmail",
       auth: {
         user: "codewithsiddhu@gmail.com",
-        pass: "mppd xlxb uoqj mymb",
+        pass: "lnbe kvls fcvk cyti",
       },
       tls: {
         rejectUnauthorized: false,
