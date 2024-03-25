@@ -7,6 +7,7 @@ const Id = require("./models/id");
 
 const app = express();
 app.use(bodyParser.json({ limit: "50mb" }));
+app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 app.use(cors());
 mongoose
   .connect(
@@ -103,6 +104,49 @@ app.get("/getId/:id", async (req, res) => {
   }
 });
 
+app.post("/lunch/:id", async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    const user = await Id.findByIdAndUpdate(id, {
+      isCompleted: true,
+    });
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+    return res.status(200).json({ message: "Lunch Status Modified" });
+  } catch (err) {
+    return res.status(404).json({ message: "Check your Internet Connection" });
+  }
+});
+
+app.post("/reset/bools", async (req, res) => {
+  try {
+    const users = await Id.find();
+
+    await Promise.all(
+      users.map(async (user) => {
+        await Id.findByIdAndUpdate(user._id, { isCompleted: false });
+      })
+    );
+
+    return res.status(200).json({ message: "Reset Successful" });
+  } catch (err) {
+    return res.status(500).json({ message: "Check your Internet Connection" });
+  }
+});
+
+app.get("/lunch/count", async (req, res) => {
+  try {
+    const users = await Id.find({ isCompleted: true });
+    let count = users.length;
+    return res.status(200).json({ count });
+  } catch (err) {
+    return res.status(500).json({ message: "Check your Internet Connection" });
+  }
+});
+
 app.listen(4001, () => {
-  console.log(`Server listening on port 3000`);
+  console.log(`Server listening on port 4001`);
 });

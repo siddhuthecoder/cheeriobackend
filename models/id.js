@@ -22,6 +22,10 @@ const idSchema = new Schema({
     type: String,
     default: "",
   },
+  isCompleted: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 module.exports = model("Id", idSchema);
