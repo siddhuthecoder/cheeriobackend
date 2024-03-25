@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const QRCode = require('qrcode');
 const cors = require("cors");
 const Id = require("./models/id");
 
@@ -19,6 +20,9 @@ mongoose
 // Registration route
 app.post("/register/:id", async (req, res) => {
   const { id } = req.params;
+  const qrUrl = `http://localhost:5173/lunch/${id}`;
+  const qrCodeImage = await QRCode.toDataURL(qrUrl);
+
   console.log(id)
   const { photo } = req.body;
   console.log(photo)
@@ -33,6 +37,7 @@ app.post("/register/:id", async (req, res) => {
       id: user.idNumber,
       photo: user.photo,
       name: user.name,
+      qrCodeImage
     });
     res.status(201).json({ message: "Registration successful" });
   } catch (err) {
@@ -40,7 +45,8 @@ app.post("/register/:id", async (req, res) => {
     res.status(500).json({ message: "Registration failed" });
   }
 });
-const sendRegistrationEmail = async ({ email, id, photo, name }) => {
+const sendRegistrationEmail = async ({ email, id, photo, name , qrCodeImage}) => {
+  console.log(qrCodeImage)
   try {
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.email",
@@ -53,10 +59,9 @@ const sendRegistrationEmail = async ({ email, id, photo, name }) => {
         rejectUnauthorized: false,
       },
     });
-    
+
     // Craft the email content
     const mailOptions = {
-      
       from: "noreply@gmail.com",
       to: email,
       subject: "Welcome to RGUKT Registration System",
@@ -65,9 +70,10 @@ const sendRegistrationEmail = async ({ email, id, photo, name }) => {
       <h1>id :${id}</h1>
       <h1>email :${email}</h1>
       <img src=${photo} alt="Preview" style={{width: '100px', height: '100px'}}>
+      <img src=${qrCodeImage} alt="Preview" style={{width: '100px', height: '100px'}}>
       `,
     };
-    
+
     // Send the email
     const info = await transporter.sendMail(mailOptions);
     console.log("Email sent:", info.messageId);
@@ -76,8 +82,8 @@ const sendRegistrationEmail = async ({ email, id, photo, name }) => {
   }
 };
 
-const sendemail = async({email , idNumber , name , id})=>{
-  console.log(email, idNumber , name , id )
+const sendemail = async ({ email, idNumber, name, id }) => {
+  console.log(email, idNumber, name, id)
   try {
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.email",
@@ -93,7 +99,7 @@ const sendemail = async({email , idNumber , name , id})=>{
 
     // Craft the email content
     const mailOptions = {
-      
+
       from: "noreply@gmail.com",
       to: email,
       subject: "Welcome to RGUKT Registration System",
@@ -118,20 +124,19 @@ app.post("/add-id", async (req, res) => {
   if (existingId) {
     return res.status(400).json({ message: "ID already exists" });
   }
-
   try {
-    const user =await Id.create({
+    const user = await Id.create({
       idNumber,
       name,
       email,
-    });
+    }).then()
 
     await sendemail({
       email: email,
       idNumber: idNumber,
       name: name,
       id: user._id // Assuming user._id is the intended 'id'
-    }).then(() => res.status(201).json({ user, message: "ID added successfully" }));GIT
+    }).then(() => res.status(201).json({ user, message: "ID added successfully" }));
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: "Failed to add ID" });
