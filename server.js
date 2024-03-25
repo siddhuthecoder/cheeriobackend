@@ -18,10 +18,15 @@ mongoose
 // Registration route
 app.post("/register/:id", async (req, res) => {
   const { id } = req.params;
+  console.log(id)
   const { photo } = req.body;
+  console.log(photo)
+  console.log(req.body)
 
   try {
     const user = await Id.findByIdAndUpdate(id, { isReg: true, photo });
+    console.log(user.photo)
+    console.log(user)
     await sendRegistrationEmail({
       email: user.email,
       id: user.idNumber,
@@ -51,15 +56,16 @@ const sendRegistrationEmail = async ({ email, id, photo, name }) => {
 
     // Craft the email content
     const mailOptions = {
+      
       from: "noreply@gmail.com",
       to: email,
       subject: "Welcome to RGUKT Registration System",
       html: `
-            <h1>Name :${name}</h1>
-            <h1>id :${id}</h1>
-            <h1>email :${email}</h1>
-            <img src=${photo} alt="Preview" style={{width: '100px', height: '100px'}}>
-            `,
+      <h1>Name :${name}</h1>
+      <h1>id :${id}</h1>
+      <h1>email :${email}</h1>
+      <img src=${photo} alt="Preview" style={{width: '100px', height: '100px'}}>
+      `,
     };
 
     // Send the email
@@ -78,7 +84,7 @@ app.post("/add-id", async (req, res) => {
   }
 
   try {
-    const user = await Id.create({
+    const user =await Id.create({
       idNumber,
       name,
       email,
