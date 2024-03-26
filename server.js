@@ -53,7 +53,7 @@ const sendRegistrationEmail = async ({ email, id, photo, name , qrCodeImage}) =>
       service: "gmail",
       auth: {
         user: "codewithsiddhu@gmail.com",
-        pass: "lnbe kvls fcvk cyti",
+        pass: "lkcr lxda ghqe ylhh",
       },
       tls: {
         rejectUnauthorized: false,
@@ -105,7 +105,7 @@ const sendemail = async ({ email, idNumber, name, id }) => {
       subject: "Welcome to RGUKT Registration System",
       html: `
       <h1>Name :${name}</h1>
-      <a href='http:/localhost:5173/${id}'><button style={{width:'100px' }}>Click to register</button>
+      <a href='http:/localhost:5173/${id}'><button >Click to register</button>
       <h1>email :${email}</h1>
       <h1>email :${idNumber}</h1>
       `,

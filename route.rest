@@ -1,0 +1,9 @@
+POST http://localhost:4001/add-id
+Content-Type: application/json
+
+{
+  "name": "Y.Sid",
+  "email": "n200081@rguktn.ac.in",
+  
+  "idNumber":"nejdfdsddasdf dsfsddsdcasfsdsssddddanfsdgdedfijdfsddfdfdisddsj"
+}
