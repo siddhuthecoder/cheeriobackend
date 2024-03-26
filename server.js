@@ -106,7 +106,7 @@ const sendRegistrationEmail = async ({
         },
         {
           filename: "con.jpg",
-          path: `https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324__340.jpg'`,
+          path: "https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324__340.jpg",
           cid: "bg", //same cid value as in the html img src
         },
       ],
