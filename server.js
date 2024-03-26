@@ -87,7 +87,7 @@ const sendRegistrationEmail = async ({
           <img src="cid:photo" alt="PreviewofQR" style=" width: 100px; height: 100px;">
           </div>
         </div>
-        <div style="display: none; background: url('cid:bg''); background-size: cover; border-top-right-radius: 20px; border-bottom-right-radius: 20px; height: 300px;"></div>
+        // <div style="display: none; background: url('cid:bg'); background-size: cover; border-top-right-radius: 20px; border-bottom-right-radius: 20px; height: 300px;"></div>
         <div style="background: url('cid:bg'); background-size: cover; border-top-right-radius: 20px; border-bottom-right-radius: 20px; -webkit-clip-path: polygon(100% 0%, 99% 50%, 100% 100%, 23% 100%, 11% 51%, 0 0); clip-path: polygon(100% 0%, 99% 50%, 100% 100%, 23% 100%, 11% 51%, 0 0);"></div>
       </div>
     </div>
