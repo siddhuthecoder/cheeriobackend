@@ -120,8 +120,8 @@ const students = [
     //   "mail": "n200957@rguktn.ac.in"
     // },
     {
-      "name": "Y. Siddhu",
-      "idNumber": "N200081asasasasaasdsasdas",
+      "name": "Y. Siddrhu",
+      "idNumber": "N200081asasasasaasdsafrfsdas",
       "email": "n200081@rguktn.ac.in"
     },
     // {
