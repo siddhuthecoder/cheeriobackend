@@ -53,6 +53,7 @@
         border: 2px solid #b721ff;
       }
 
+<<<<<<< HEAD
       .submit {
         background: #b721ff;
         padding: 10px 30px;
@@ -101,6 +102,137 @@
           height: 300px;
         }
       }
+=======
+</head>
+<body>
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+	body{
+		background-color: #21D4FD;
+		background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+		width: 100%;
+		overflow: hidden;
+	
+	}
+	.wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		height: 100vh;
+	}
+	.form_container {
+		-webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+			rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+			rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+		border-radius: 20px;
+		background-color: #12192c;
+	}
+	.input_container {
+		padding: 4em;
+		position: relative;
+		color: #fff;
+	}
+	.input_container h1{
+		font-size: 30px;
+	}
+	#input {
+		padding: 10px 30px;
+		background: #fff;
+		width: 100%;
+		font-size: 16px;
+		border-radius: 15px;
+		border: 2px solid #B721FF;
+	}
+	
+	.submit {
+		background: #B721FF;
+		padding: 10px 30px;
+		color: #fff;
+		border: 2px solid #B721FF;
+		font-size: 16px;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		border-radius: 20px;
+		position: absolute;
+		right: 2em;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+	.spooky_bg {
+		background: url(https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324__340.jpg);
+		background-size: cover;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+		-webkit-clip-path: polygon(
+			100% 0%,
+			99% 50%,
+			100% 100%,
+			23% 100%,
+			11% 51%,
+			0 0
+		);
+		clip-path: polygon(100% 0%, 99% 50%, 100% 100%, 23% 100%, 11% 51%, 0 0);
+	}
+	.spooky_bg2 {
+		display: none;
+		background: url(https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324__340.jpg);
+		background-size: cover;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+	}
+	#error {
+		color: #35b7a4;
+	}
+	@media (max-width: 768px) {
+		.spooky_bg {
+			display: none;
+		}
+		.spooky_bg2 {
+			display: block !important;
+			height: 300px;
+		}
+	}
+	
+	.credit a{
+		text-decoration: none;
+		color: #B721FF;
+		font-weight: 800;
+		}
+		
+		.credit {
+		  margin: 10px;
+		}
+	
+	
+	  </style>
+<!-- <div class="wrapper">
+	<div class="container">
+		<div class="columns form_container">
+			<div class="column is-half spooky_bg2">
+			</div>
+			<div class="column is-half input_container">
+                <h1 style="font-size:40px;font-weight:700;color:purple">CHEERIO</h1>
+				<h1>HI, [name] You Are Invited</h1>
+				<h2>Let the Fest  begin</h2>
+				<p>I am delighted to extend an invitation to you for the upcoming fest named "Cheerio" organized by our Computer Science and Engineering (CSE) department. </p>
+				
+				<div class="mt-2 ml-2">
+					<span id="error"></span>
+				</div>
+				<div class="credit">Made with <span style="color:tomato;font-size:20px;">❤</span> For RGUKTNs</div>
+			</div>
+			<div class="column is-half spooky_bg">
+			</div>
+		</div>
+	</div>
+</div> -->
+<img src="data:image/png;base64,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" width="500px">
+  <script>
+>>>>>>> 8622b8d27fc6946249c754808aa57a08695317f2
 
       .credit a {
         text-decoration: none;
