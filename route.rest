@@ -1,8 +1,18 @@
-POST https://cheeriobackend-v4ch.onrender.com/add-id
+# POST https://cheeriobackend-v4ch.onrender.com/add-id
+# Content-Type: application/json
+
+# {
+#       "name":"Y.Siddhu",
+#       "idNumber":"N200d00sddssds@081",
+#        "email":"n200081@rguktn.ac.in"
+#     }
+  #post#
+POST http://localhost:4001/add-id    
 Content-Type: application/json
 
 {
-      "name":"Y.Siddhu",
-      "idNumber":"N20000sddssds@081",
+      "name":"Y.Siddhbu",
+      "idNumber":"N20sd0dasd0sad0sadsdbddssadssds@081",
        "email":"n200081@rguktn.ac.in"
     }
+  

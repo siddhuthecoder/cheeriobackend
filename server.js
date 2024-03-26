@@ -177,10 +177,11 @@ const sendRegistrationEmail = async ({ email, id, photo, name , qrCodeImage}) =>
 			</div>
 			<div class="column is-half input_container">
                 <h1 style="font-size:40px;font-weight:700;color:purple">CHEERIO</h1>
-				<h1>HI, [name] You Are Invited</h1>
-				<h2>Let the Fest  begin</h2>
+				<h1>HI, ${name}  You Are Invited</h1>
+				<h2>Let the Fest begin</h2>
 				<p>I am delighted to extend an invitation to you for the upcoming fest named "Cheerio" organized by our Computer Science and Engineering (CSE) department. </p>
-				
+				<h1>HI, ${id} idnumabr </h1>
+        h1>HI, ${email}  </h1>
 				<div class="mt-2 ml-2">
 					<span id="error"></span>
 				</div>
@@ -191,14 +192,14 @@ const sendRegistrationEmail = async ({ email, id, photo, name , qrCodeImage}) =>
 		</div>
 	</div>
 </div>
-      <h1>Name :${name}</h1>
+    
+      `,
+    };
+{/* <h1>Name :${name}</h1>
       <h1>id :${id}</h1>
       <h1>email :${email}</h1>
       <img src=${photo} alt="Preview" >
-      <img src=${qrCodeImage} >
-      `,
-    };
-
+      <img src=${qrCodeImage} ></img> */}
     // Send the email
     const info = await transporter.sendMail(mailOptions);
     console.log("Email sent:", info.messageId);
