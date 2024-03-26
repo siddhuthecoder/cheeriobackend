@@ -73,12 +73,13 @@ const sendRegistrationEmail = async ({
       <div style="padding: 4em; position: relative; color: #fff;">
         <h1 style="font-size: 40px; font-weight: 700; color: purple;">CHEERIO</h1>
         <h2 style="color:white">HI, ${name}(${id}) You Are Invited</h2>
+        <img src="cid:qrimage" alt="PreviewofQR" style=" width: 100px; height: 100px;">
+        <img src="cid:photo" alt="PreviewofPhoto" style=" width: 100px; height: 100px;">
         <h3 style="color:white;font-size:22px">Let the Fest begin</h3>
         <p style="color:white;font-size:20px">I am delighted to extend an invitation to you for the upcoming fest named "Cheerio" organized by our Computer Science and Engineering (CSE) department.</p>
         <div class="mt-2 ml-2"><span id="error"></span></div>
-        <div style="margin: 10px 0;color:white">Made with <span style="color: tomato; font-size: 20px;">❤</span> For RGUKTNs</div>
-        <img src="cid:qrimage" alt="PreviewofQR" style=" width: 100px; height: 100px;">
-        <img src="cid:photo" alt="PreviewofPhoto" style=" width: 100px; height: 100px;">
+        <div style="margin-bottom: 20px 0;color:white">Made with <span style="color: tomato; font-size: 20px;">❤</span> For RGUKTNs</div>
+        
       </div>
     </div>
   </div>
