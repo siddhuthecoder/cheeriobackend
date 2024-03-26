@@ -78,12 +78,18 @@ const sendRegistrationEmail = async ({ email, id, photo, name , qrCodeImage}) =>
           <h1 style="font-size: 20px; margin-top: 0;">Name: ${name}</h1>
           <h1 style="font-size: 20px; margin-top: 0;">ID: ${id}</h1>
           <h1 style="font-size: 20px; margin-top: 0;">Email: ${email}</h1>
-          <img src="${qrCodeImage}" alt="PreviewofQR" style=" width: 100px; height: 100px;">
+          <img src="cid:qrimage" alt="PreviewofQR" style=" width: 100px; height: 100px;">
         </div>
       </div>
     </div>
       `,
+      attachments: [{
+        filename: 'QR.PNG',
+        path: `${qrCodeImage}`,
+        cid: 'qrimage' //same cid value as in the html img src
+    }]
     };
+
 {/* <h1>Name :${name}</h1>
       <h1>id :${id}</h1>
       <h1>email :${email}</h1>
