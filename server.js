@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 app.use(cors());
 mongoose
   .connect(
-    "mongodb+srv://flkarthikjidagam:TzHHFtRNTBFJQsnF@cluster0.v5cchvu.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb+srv://n210368:ZxUFbySgVbbQrKEw@cluster0.6ip13vg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
   )
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error(err));
