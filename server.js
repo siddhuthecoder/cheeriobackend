@@ -69,20 +69,19 @@ const sendRegistrationEmail = async ({ email, id, photo, name , qrCodeImage}) =>
     
 
       <div style="background-color: #21D4FD; background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); width: 100%; overflow: hidden;">
-        <div style="display: flex; align-items: center; height: 100vh;">
-          <div style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; border-radius: 20px; background-color: #12192c; padding: 4em; color: #fff;">
-            <h1 style="font-size: 40px; font-weight: 700; color: purple; margin: 0;">CHEERIO</h1>
-            <h1 style="font-size: 24px; margin-top: 0;">HI, ${name} You Are Invited</h1>
-            <h2 style="font-size: 20px; margin-top: 0;">Let the Fest begin</h2>
-            <p style="font-size: 16px; margin-top: 0;">I am delighted to extend an invitation to you for the upcoming fest named "Cheerio" organized by our Computer Science and Engineering (CSE) department.</p>
-            <h1 style="font-size: 20px; margin-top: 0;">Name: ${name}</h1>
-            <h1 style="font-size: 20px; margin-top: 0;">ID: ${id}</h1>
-            <h1 style="font-size: 20px; margin-top: 0;">Email: ${email}</h1>
-            <img src="${qrCodeImage}" alt="PreviewofQR" style=" width: 100px; height: 100px;">
-            
-          </div>
+      <div style="display: flex; align-items: center; height: 100vh;">
+        <div style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; border-radius: 20px; background-color: #12192c; padding: 4em; color: #fff;">
+          <h1 style="font-size: 40px; font-weight: 700; color: purple; margin: 0;">CHEERIO</h1>
+          <h1 style="font-size: 24px; margin-top: 0;">HI, ${name} You Are Invited</h1>
+          <h2 style="font-size: 20px; margin-top: 0;">Let the Fest begin</h2>
+          <p style="font-size: 16px; margin-top: 0;">I am delighted to extend an invitation to you for the upcoming fest named "Cheerio" organized by our Computer Science and Engineering (CSE) department.</p>
+          <h1 style="font-size: 20px; margin-top: 0;">Name: ${name}</h1>
+          <h1 style="font-size: 20px; margin-top: 0;">ID: ${id}</h1>
+          <h1 style="font-size: 20px; margin-top: 0;">Email: ${email}</h1>
+          <img src="${qrCodeImage}" alt="PreviewofQR" style=" width: 100px; height: 100px;">
         </div>
       </div>
+    </div>
       `,
     };
 {/* <h1>Name :${name}</h1>

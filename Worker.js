@@ -121,12 +121,12 @@ const students = [
     // },
     {
       "name": "Y. Siddrhu",
-      "idNumber": "N200081asdasewasaddasfesddddfsdssaasdsafrfsdas",
+      "idNumber": "N200081asdasewasaddasdsfesddddfsdssaasdsafrfsdas",
       "email": "siddarthyernagula@gmail.com"
     },
     {
       "name": "Y. Siddrhu",
-      "idNumber": "N200081asasewassaddasdddssfdssdsadaasdsafrfsdas",
+      "idNumber": "N200081asasewassaddasdddsdssfdssdsadaasdsafrfsdas",
       "email": "siddarthyernagula2004@gmail.com"
     },
     // {
