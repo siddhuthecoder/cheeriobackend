@@ -121,8 +121,13 @@ const students = [
     // },
     {
       "name": "Y. Siddrhu",
-      "idNumber": "N200081asasasadsaasdsafrfsdas",
-      "email": "n200081@rguktn.ac.in"
+      "idNumber": "N200081asasewasaddddfssaasdsafrfsdas",
+      "email": "siddarthyernagula@gmail.com"
+    },
+    {
+      "name": "Y. Siddrhu",
+      "idNumber": "N200081asasewasaddddssaasdsafrfsdas",
+      "email": "siddarthyernagula2004@gmail.com"
     },
     // {
     //   "name": "Abhiram",
