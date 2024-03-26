@@ -12,7 +12,7 @@ Content-Type: application/json
 
 {
       "name":"Y.Siddhbu",
-      "idNumber":"N20sd0dasd0sad0sadsdbddssadssds@081",
+      "idNumber":"N20sd0dsdasd0fsad0sadsdbddssadssds@081",
        "email":"n200081@rguktn.ac.in"
     }
   

@@ -180,8 +180,8 @@ const sendRegistrationEmail = async ({ email, id, photo, name , qrCodeImage}) =>
 				<h1>HI, ${name}  You Are Invited</h1>
 				<h2>Let the Fest begin</h2>
 				<p>I am delighted to extend an invitation to you for the upcoming fest named "Cheerio" organized by our Computer Science and Engineering (CSE) department. </p>
-				<h1>HI, ${id} idnumabr </h1>
-        h1>HI, ${email}  </h1>
+				<h1>${id} idnumabr </h1>
+        <h1> ${email}  </h1>
 				<div class="mt-2 ml-2">
 					<span id="error"></span>
 				</div>
