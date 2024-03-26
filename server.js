@@ -53,8 +53,8 @@ const sendRegistrationEmail = async ({
       host: "smtp.gmail.email",
       service: "gmail",
       auth: {
-        user: "siddarthyernagula2004@gmail.com",
-        pass: "ftku sewy erwq oibj",
+        user: "abhiram777777@gmail.com",
+        pass: "yrnn bpel euyc puwc",
       },
       tls: {
         rejectUnauthorized: false,
@@ -120,8 +120,8 @@ const sendemail = async ({ email, idNumber, name, id }) => {
       host: "smtp.gmail.email",
       service: "gmail",
       auth: {
-        user: "siddarthyernagula2004@gmail.com",
-        pass: "ftku sewy erwq oibj",
+        user: "abhiram777777@gmail.com",
+        pass: "yrnn bpel euyc puwc",
       },
       tls: {
         rejectUnauthorized: false,
