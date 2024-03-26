@@ -1,144 +1,39 @@
 const students = [
-  // {
-  //   "name": "CH. LAVANYA",
-  //   "idNumber": "N200094",
-  //   "mail": "n200094@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "M. SANGEETHA",
-  //   "idNumber": "N200348",
-  //   "mail": "n200348@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "V.A.K. VAMSITHA",
-  //   "idNumber": "N200683",
-  //   "mail": "n200683@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "T. SHALINI",
-  //   "idNumber": "N200029",
-  //   "mail": "n200029@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "P. SWAPNA",
-  //   "idNumber": "N200784",
-  //   "mail": "n200784@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "K.TEJA SRI",
-  //   "idNumber": "N200375",
-  //   "mail": "n200375@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "B.TEJA",
-  //   "idNumber": "N200521",
-  //   "mail": "n200521@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "K.KUSUMA PRIYA",
-  //   "idNumber": "N200522",
-  //   "mail": "n200522@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "P. SOWJANYA",
-  //   "idNumber": "N200450",
-  //   "mail": "n200450@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "L. KALYAN",
-  //   "idNumber": "N200329",
-  //   "mail": "n200329@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "S. PRADEEP",
-  //   "idNumber": "N201023",
-  //   "mail": "n201023@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "S. DILEEP",
-  //   "idNumber": "N200791",
-  //   "mail": "n200791@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "K.MOHAN KUMAR",
-  //   "idNumber": "N200394",
-  //   "mail": "n200394@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "B.V.P SIDDARDHA",
-  //   "idNumber": "N200426",
-  //   "mail": "n200426@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "S. AKHIL",
-  //   "idNumber": "N200145",
-  //   "mail": "n200145@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "B. BHARGAV",
-  //   "idNumber": "N200663",
-  //   "mail": "n200663@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "PRABHAS",
-  //   "idNumber": "N200738",
-  //   "mail": "n200738@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "NOOR BHASA",
-  //   "idNumber": "N200750",
-  //   "mail": "n200750@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "N. GANESH NAIK",
-  //   "idNumber": "N201002",
-  //   "mail": "n201002@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "G. SATHISH ROY",
-  //   "idNumber": "N200298",
-  //   "mail": "n200298@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "G. DILEEP REDDY",
-  //   "idNumber": "N200947",
-  //   "mail": "n200947@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "J. LEELA SAI",
-  //   "idNumber": "N200065",
-  //   "mail": "n200065@rguktn.ac.in"
-  // },
   {
-    name: "M. DHEERAJ",
-    idNumber: "N200800",
-    email: "n210368@rguktn.ac.in",
+    name: "VIGNESH",
+    idNumber: "N200813",
+    email: "n200813@rguktn.ac.in",
   },
   {
-    name: "H. SAI",
-    idNumber: "N200957",
-    email: "n210368@rguktn.ac.in",
+    name: "DILEEP",
+    idNumber: "N200539",
+    email: "n200539@rguktn.ac.in",
   },
   {
-    name: "Y. Siddrhu",
-    idNumber: "N200081asdasesddswdsaasadderasdsfesddddfsdssaasdsafrfsdas",
-    email: "siddarthyernagula@gmail.com",
+    name: "TARUN",
+    idNumber: "N200680",
+    email: "n200680@rguktn.ac.in",
   },
   {
-    name: "Y. Siddrhu",
-    idNumber: "N200081asasdsewassaserdaddasdsdddsdssfdssdsadaasdsafrfsdas",
-    email: "siddarthyernagula2004@gmail.com",
+    name: "KVS. MANIDEEP",
+    idNumber: "N200677",
+    email: "n200677@rguktn.ac.in",
   },
-  // {
-  //   "name": "Abhiram",
-  //   "idNumber": "N191080",
-  //   "mail": "n191080@rguktn.ac.in"
-  // },
-  // {
-  //   "name": "Shareef",
-  //   "idNumber": "N190499",
-  //   "mail": "n190499@rguktn.ac.in"
-  // }
+  {
+    name: "K. PRIYANKA",
+    idNumber: "N200101",
+    email: "n200101@rguktn.ac.in",
+  },
+  {
+    name: "USHA SRI",
+    idNumber: "N200190",
+    email: "n200190@rguktn.ac.in",
+  },
+  {
+    name: "T.SAI CHOWSIKA",
+    idNumber: "N201O54",
+    email: "n201054@rguktn.ac.in",
+  },
 ];
 
 async function addId(idNumber, name, email) {

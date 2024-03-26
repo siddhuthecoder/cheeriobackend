@@ -53,8 +53,8 @@ const sendRegistrationEmail = async ({
       host: "smtp.gmail.email",
       service: "gmail",
       auth: {
-        user: "codewithsiddhu@gmail.com",
-        pass: "lkcr lxda ghqe ylhh",
+        user: "edu.cse@rguktn.ac.in",
+        pass: "scax hrqg cpjh jofz",
       },
       tls: {
         rejectUnauthorized: false,
@@ -67,21 +67,23 @@ const sendRegistrationEmail = async ({
       to: email,
       subject: "You are invited to cheerio",
       html: `
-      <div style="background-color: #21D4FD; background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); width: 100%; overflow: hidden;">
-        <div style="display: flex; align-items: center; height: 100vh;">
-          <div style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; border-radius: 20px; background-color: #12192c; padding: 4em; color: #fff;">
-            <h1 style="font-size: 40px; font-weight: 700; color: purple; margin: 0;">CHEERIO</h1>
-            <h1 style="font-size: 24px; margin-top: 0;">HI, ${name} You Are Invited</h1>
-            <h2 style="font-size: 20px; margin-top: 0;">Let the Fest begin</h2>
-            <p style="font-size: 16px; margin-top: 0;">I am delighted to extend an invitation to you for the upcoming fest named "Cheerio" organized by our Computer Science and Engineering (CSE) department.</p>
-            <h1 style="font-size: 20px; margin-top: 0;">Name: ${name}</h1>
-            <h1 style="font-size: 20px; margin-top: 0;">ID: ${id}</h1>
-            <h1 style="font-size: 20px; margin-top: 0;">Email: ${email}</h1>
-            <img src="${qrCodeImage}" alt="PreviewofQR" style=" width: 100px; height: 100px;">
-            
-          </div>
-        </div>
+      <div style="background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%); width: 100%; overflow: hidden;">
+  <div style="display: flex; align-items: center; height: 100vh;">
+    <div style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; border-radius: 20px; background-color: #12192c;">
+      <div style="padding: 4em; position: relative; color: #fff;">
+        <h1 style="font-size: 40px; font-weight: 700; color: purple;">CHEERIO</h1>
+        <h2 style="color:white">HI, ${name}(${id}) You Are Invited</h2>
+        <img src="cid:qrimage" alt="PreviewofQR" style=" width: 100px; height: 100px;">
+        <img src="cid:photo" alt="PreviewofPhoto" style=" width: 100px; height: 100px;">
+        <h3 style="color:white;font-size:22px">Let the Fest begin</h3>
+        <p style="color:white;font-size:20px">We are delighted to extend an invitation to you for the upcoming fest "Cheerio" organized by our Computer Science and Engineering (CSE) department.</p>
+        <div class="mt-2 ml-2"><span id="error"></span></div>
+        <div style="margin-bottom: 20px 0;color:white">Made with <span style="color: tomato; font-size: 20px;">❤</span> For RGUKTNs</div>
+        
       </div>
+    </div>
+  </div>
+</div>
       `,
       //   <div style="display: none; background: url('https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324__340.jpg'); background-size: cover; border-top-right-radius: 20px; border-bottom-right-radius: 20px; height: 300px;"></div>
       // <div style="background: url('https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324__340.jpg'); background-size: cover; border-top-right-radius: 20px; border-bottom-right-radius: 20px; -webkit-clip-path: polygon(100% 0%, 99% 50%, 100% 100%, 23% 100%, 11% 51%, 0 0); clip-path: polygon(100% 0%, 99% 50%, 100% 100%, 23% 100%, 11% 51%, 0 0);"></div>
@@ -97,8 +99,8 @@ const sendRegistrationEmail = async ({
           cid: "photo", //same cid value as in the html img src
         },
         {
-          filename: "con.jpg",
-          path: "https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324__340.jpg",
+          filename: "invitation.jpg",
+          path: "https://cheerio24.vercel.app/INVITATIONADNO.png",
           cid: "bg",
         },
       ],
@@ -118,8 +120,8 @@ const sendemail = async ({ email, idNumber, name, id }) => {
       host: "smtp.gmail.email",
       service: "gmail",
       auth: {
-        user: "codewithsiddhu@gmail.com",
-        pass: "lnbe kvls fcvk cyti",
+        user: "edu.cse@rguktn.ac.in",
+        pass: "scax hrqg cpjh jofz",
       },
       tls: {
         rejectUnauthorized: false,
@@ -132,9 +134,9 @@ const sendemail = async ({ email, idNumber, name, id }) => {
       to: email,
       subject: "Cheerio Invitation",
       html: `
-      <h1>Cheerio Invitation</h1>
-      <h3>Please press the below button 👇</h3>
-      <a href='https://cheerio24.vercel.app/${id}'><button >Click to register</button>
+       <h1>Cheerio Invitation</h1>
+       <h3>Please press the below button 👇</h3>
+       <a href='https://cheerio24.vercel.app/${id}'><button >Click to register</button>
     
       `,
     };
