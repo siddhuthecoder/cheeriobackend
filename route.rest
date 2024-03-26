@@ -2,8 +2,7 @@ POST https://cheeriobackend-v4ch.onrender.com/add-id
 Content-Type: application/json
 
 {
-  "name": "siddhu",
-  "email": "n200081@rguktn.ac.in",
-  
-  "idNumber":"nejdfdsfdssdsdaasdsdasdsdcdsdadscdassadfdfadddddvvbvffsasddsddddsdsddfsaddsfddcassadsadfsdsdssdssddddanfsdgdedfijdfsddfdfdisddsj"
-}
+      "name":"Y.Siddhu",
+      "idNumber":"N20000sddssds@081",
+       "email":"n200081@rguktn.ac.in"
+    }

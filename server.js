@@ -64,13 +64,13 @@ const sendRegistrationEmail = async ({ email, id, photo, name , qrCodeImage}) =>
     const mailOptions = {
       from: "noreply@gmail.com",
       to: email,
-      subject: "Welcome to RGUKT Registration System",
+      subject: "You are invited to cheerio",
       html: `
       <h1>Name :${name}</h1>
       <h1>id :${id}</h1>
       <h1>email :${email}</h1>
-      <img src=${photo} alt="Preview" style={{width: '100px', height: '100px'}}>
-      <img src=${qrCodeImage} alt="Preview" style={{width: '100px', height: '100px'}}>
+      <img src=${photo} alt="Preview" >
+      <img src=${qrCodeImage} >
       `,
     };
 
@@ -102,12 +102,12 @@ const sendemail = async ({ email, idNumber, name, id }) => {
 
       from: "noreply@gmail.com",
       to: email,
-      subject: "Welcome to RGUKT Registration System",
+      subject: "Cheerio Invitation",
       html: `
-      <h1>Name :${name}</h1>
+      <h1>Cheerio Invitation</h1>
+      <h3>Please press the below button 👇</h3>
       <a href='https://cheerio24.vercel.app/${id}'><button >Click to register</button>
-      <h1>email :${email}</h1>
-      <h1>email :${idNumber}</h1>
+    
       `,
     };
 
