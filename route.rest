@@ -3,16 +3,7 @@
 
 # {
 #       "name":"Y.Siddhu",
-#       "idNumber":"N200d00sddssds@081",
+#       "idNumber":"N200d00sddsdsdsasds@081",
 #        "email":"n200081@rguktn.ac.in"
 #     }
-  #post#
-POST http://localhost:4001/add-id    
-Content-Type: application/json
-
-{
-      "name":"Y.Siddhbu",
-      "idNumber":"N20sd0dsdasd0fsad0sadsdbddssadssds@081",
-       "email":"n200081@rguktn.ac.in"
-    }
-  
+#   ###
