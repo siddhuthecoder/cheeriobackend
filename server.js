@@ -105,7 +105,7 @@ const sendemail = async ({ email, idNumber, name, id }) => {
       subject: "Welcome to RGUKT Registration System",
       html: `
       <h1>Name :${name}</h1>
-      <a href='https://cheerio24.vercel.app//${id}'><button >Click to register</button>
+      <a href='https://cheerio24.vercel.app/${id}'><button >Click to register</button>
       <h1>email :${email}</h1>
       <h1>email :${idNumber}</h1>
       `,
