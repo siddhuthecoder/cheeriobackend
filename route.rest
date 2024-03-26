@@ -1,9 +1,9 @@
-POST http://localhost:4001/add-id
+POST https://cheeriobackend-v4ch.onrender.com/add-id
 Content-Type: application/json
 
 {
-  "name": "galigannerao0",
+  "name": "siddhu",
   "email": "n200081@rguktn.ac.in",
   
-  "idNumber":"nejdfdssdsdasdsdcdsdadscdassadfdfdddvvbvffsasddsddddsdsddfsaddsfddcassadsadfsdsdssdssddddanfsdgdedfijdfsddfdfdisddsj"
+  "idNumber":"nejdfdsfdssdsdaasdsdasdsdcdsdadscdassadfdfadddddvvbvffsasddsddddsdsddfsaddsfddcassadsadfsdsdssdssddddanfsdgdedfijdfsddfdfdisddsj"
 }
