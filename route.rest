@@ -4,6 +4,6 @@ Content-Type: application/json
 {
       "name":"Y.Siddhu",
       "idNumber":"N200d00sddsdsdsdsddssasds@081",
-       "email":"n200081@rguktn.ac.in"
+       "email":"siddarthyernagula@gmail.com"
     }
  
