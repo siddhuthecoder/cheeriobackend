@@ -59,7 +59,7 @@ const sendRegistrationEmail = async ({ email, id, photo, name , qrCodeImage}) =>
         rejectUnauthorized: false,
       },
     });
-
+    const imageContent = fs.readFileSync(photo, { encoding: 'base64' });
     // Craft the email content
     const mailOptions = {
       from: "noreply@gmail.com",
@@ -78,7 +78,9 @@ const sendRegistrationEmail = async ({ email, id, photo, name , qrCodeImage}) =>
             <h1 style="font-size: 20px; margin-top: 0;">Name: ${name}</h1>
             <h1 style="font-size: 20px; margin-top: 0;">ID: ${id}</h1>
             <h1 style="font-size: 20px; margin-top: 0;">Email: ${email}</h1>
-            <img src="${photo}" alt="Preview" style="width: 100px; height: 100px;">
+            <img src="data:image/jpeg;base64,${imageContent}" alt="Preview" style=" width: 100px; height: 100px;">
+            <img src="${qrCodeImage}" alt="Preview" style=" width: 100px; height: 100px;">
+            
           </div>
         </div>
       </div>
