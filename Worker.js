@@ -1,165 +1,344 @@
 const students =[
-  
- {
-  "name": "H. SAI",
-  "idNumber": "n200957",
-  "email": "n200957@rguktn.ac.in"
- },
- {
-  "name": "M.Govidu",
-  "idNumber": "n200686",
-  "email": "n200686@rguktn.ac.in"
- },
- {
-  "name": "L.Santhosh kumar",
-  "idNumber": "n211023",
-  "email": "n211023@rguktn.ac.in"
- },
- {
-  "name": "V.RAMU",
-  "idNumber": "n201102",
-  "email": "n201102@rguktn.ac.in"
- },
- {
-  "name": "U. JAGADEESHWARA RAO",
-  "idNumber": "n201076",
-  "email": "n201076@rguktn.ac.in"
- },
- {
-  "name": "B.SOMEHS RAJU",
-  "idNumber": "n200991",
-  "email": "n200991@rguktn.ac.in"
- },
- {
-  "name": "S.ADnAn SAMI",
-  "idNumber": "n200963",
-  "email": "n200963@rguktn.ac.in"
- },
- {
-  "name": "D. AnAnD TEJA",
-  "idNumber": "n200948",
-  "email": "n200948@rguktn.ac.in"
- },
- {
-  "name": "S.VEnKATESWAR RAO",
-  "idNumber": "n200899",
-  "email": "n200899@rguktn.ac.in"
- },
- {
-  "name": "P. ABHIKYA PRAnAY",
-  "idNumber": "n200893",
-  "email": "n200893@rguktn.ac.in"
- },
- {
-  "name": "M.DEVA PRASAD",
-  "idNumber": "n200861",
-  "email": "n200861@rguktn.ac.in"
- },
- {
-  "name": "Harshitha",
-  "idNumber": "n200776",
-  "email": "n200776@rguktn.ac.in"
- },
- {
-  "name": "B.ARUn KUMAR",
-  "idNumber": "n200706",
-  "email": "n200706@rguktn.ac.in"
- },
- {
-  "name": "Harika",
-  "idNumber": "n200620",
-  "email": "n200620@rguktn.ac.in"
- },
- {
-  "name": "M. AJAY KUMAR",
-  "idNumber": "n200573",
-  "email": "n200573@rguktn.ac.in"
- },
- {
-  "name": "n. RAJESH CHOWDARY",
-  "idNumber": "n200559",
-  "email": "n200559@rguktn.ac.in"
- },
- {
-  "name": "P.DRUGA ASHISH",
-  "idNumber": "n200500",
-  "email": "n200500@rguktn.ac.in"
- },
- {
-  "name": "S K.  MOHMADD. KAIF",
-  "idNumber": "n200460",
-  "email": "n200460@rguktn.ac.in"
- },
- {
-  "name": "n. SAI SATISH",
-  "idNumber": "n200392",
-  "email": "n200392@rguktn.ac.in"
- },
- {
-  "name": "K.DEEPAK VARMA",
-  "idNumber": "n200351",
-  "email": "n200351@rguktn.ac.in"
- },
- {
-  "name": "P.S. VAMSI",
-  "idNumber": "n200346",
-  "email": "n200346@rguktn.ac.in"
- },
- {
-  "name": "M.J.SIDDARTHA",
-  "idNumber": "n200237",
-  "email": "n200237@rguktn.ac.in"
- },
- {
-  "name": "C.VEnKATESWARLU",
-  "idNumber": "n200059",
-  "email": "n200059@rguktn.ac.in"
- },
- {
-  "name": "A.V.GAnESH",
-  "idNumber": "n200050",
-  "email": "n200050@rguktn.ac.in"
- },
- {
-  "name": "n.ABHI RAM",
-  "idNumber": " n200211",
-  "email": "n200211@rguktn.ac.in"
- },
- {
-  "name": "T.SAI CHOWSIKA",
-  "idNumber": "n201054",
-  "email": "n201054@rguktn.ac.in"
- },
- {
-  "name": "VIGnESH",
-  "idNumber": "n200813",
-  "email": "n200813@rguktn.ac.in"
- },
- {
-  "name": "TARUn",
-  "idNumber": "n200680",
-  "email": "n200680@rguktn.ac.in"
- },
- {
-  "name": "KVS. MAnIDEEP",
-  "idNumber": "n200677",
-  "email": "n200677@rguktn.ac.in"
- },
- {
-  "name": "DILEEP",
-  "idNumber": "n200539",
-  "email": "n200539@rguktn.ac.in"
- },
- {
-  "name": "USHA SRI",
-  "idNumber": "n200190",
-  "email": "n200190@rguktn.ac.in"
- },
- {
-  "name": "K. PRIYAnKA",
-  "idNumber": "n200101",
-  "email": "n200101@rguktn.ac.in"
- }
+  {
+    "idNumber": "n190914",
+    "name": "VETAGIRI LAKSHMI PRIYA",
+    "email": "n190914@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190925",
+    "name": "KAnUKURI nAnI BABU",
+    "email": "n190925@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190927",
+    "name": "nALABAI JAYA KUMAR",
+    "email": "n190927@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191004",
+    "name": "VISWAnATHAM VEDAVYAS",
+    "email": "n191004@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191025",
+    "name": "POLISETTI VIJAYA MAHALAKSHMI",
+    "email": "n191025@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191048",
+    "name": "DAMISETTI SAnKARA MASARA V M RAMALAXMAn",
+    "email": "n191048@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191065",
+    "name": "BATHInA nAVYA SURYA DEEPTHI",
+    "email": "n191065@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191111",
+    "name": "B.Hema Bhanu",
+    "email": "n191111@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190011",
+    "name": "nEDUnURI SnEHAMADHURI",
+    "email": "n190011@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190058",
+    "name": "KUDDAnA PALLAVI",
+    "email": "n190058@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190075",
+    "name": "VEERESWARAPU ASHA JYOTHI",
+    "email": "n190075@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190096",
+    "name": "KOnTHALA AKHIL KUMAR",
+    "email": "n190096@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190108",
+    "name": "BHAVAnA BEHARA",
+    "email": "n190108@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190110",
+    "name": "PULAKALA JAYARAM",
+    "email": "n190110@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190112",
+    "name": "SRIRAM PHAnISRI",
+    "email": "n190112@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190118",
+    "name": "TALARI nAnDInI",
+    "email": "n190118@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190127",
+    "name": "GUTHULA LOKESH",
+    "email": "n190127@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190234",
+    "name": "nAGARAJU HARIKA",
+    "email": "n190234@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190239",
+    "name": "KETHA SRAVAnI",
+    "email": "n190239@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190270",
+    "name": "KOTA BHAnU SRIVALLI",
+    "email": "n190270@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190272",
+    "name": "KOMMAnAPALLI JYOTHSnA",
+    "email": "n190272@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190284",
+    "name": "ASAPU KIRAnKUMAR",
+    "email": "n190284@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190293",
+    "name": "PALLA AMRUTHA",
+    "email": "n190293@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190300",
+    "name": "BELDOnA TEJASWInI",
+    "email": "n190300@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190309",
+    "name": "KOnDA SRUTHI",
+    "email": "n190309@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190373",
+    "name": "PInnInTI BHAGYA",
+    "email": "n190373@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190378",
+    "name": "nERSU SAI SRIRAM",
+    "email": "n190378@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190391",
+    "name": "BALI AJITH KUMAR",
+    "email": "n190391@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190406",
+    "name": "ALUGOLU nEELIMA",
+    "email": "n190406@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190419",
+    "name": "VADDI HARSHITHA",
+    "email": "n190419@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190437",
+    "name": "DHUBA MOOLA LAKSHMI BHARATHI PRIYA",
+    "email": "n190437@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190457",
+    "name": "nEELAM LAKSHMI CHAKRITHA",
+    "email": "n190457@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190480",
+    "name": "SHAIK MOHAMMAD MAHEER",
+    "email": "n190480@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190482",
+    "name": "SHAIK MOHIDDIn BASHA",
+    "email": "n190482@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190489",
+    "name": "SHAIK MARIYAM MEHATAZ",
+    "email": "n190489@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190493",
+    "name": "SHAIK AHAMED ALISHA",
+    "email": "n190493@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190561",
+    "name": "GAnTA MOHAnA PRIYA",
+    "email": "n190561@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190577",
+    "name": "SUnKARA SIRI KUMARI",
+    "email": "n190577@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190649",
+    "name": "MUCHARLA UHAKAnCHAnA SRILAKSHMI",
+    "email": "n190649@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190679",
+    "name": "REDDYVARI YASWAnTH",
+    "email": "n190679@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190742",
+    "name": "DUnnA SHAKEELA",
+    "email": "n190742@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190748",
+    "name": "KOLLURI nITEESH CHAnDRA",
+    "email": "n190748@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190787",
+    "name": "PALADUGU AnUSHA",
+    "email": "n190787@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190793",
+    "name": "KURAVADI PRASAnTH",
+    "email": "n190793@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190810",
+    "name": "JOnnALAGADDA MADHU VARDHAn",
+    "email": "n190810@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190818",
+    "name": "S A WESHLY",
+    "email": "n190818@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190838",
+    "name": "DOLA THULASI",
+    "email": "n190838@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190849",
+    "name": "PALEPU LIKHITHA",
+    "email": "n190849@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190865",
+    "name": "MALA RAMAKRISHnA",
+    "email": "n190865@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190893",
+    "name": "nAMBURI SAI CHAnDU",
+    "email": "n190893@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190898",
+    "name": "GUGULOTHU PREMALATHA",
+    "email": "n190898@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190943",
+    "name": "MORLA VAISHnAVI",
+    "email": "n190943@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190958",
+    "name": "SIRIPURAM GOWTHAMI",
+    "email": "n190958@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190970",
+    "name": "TOLUSURI SRAVAnTHI",
+    "email": "n190970@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n190983",
+    "name": "JInKALA VEnKATRAMAnA",
+    "email": "n190983@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191028",
+    "name": "nIMMAGADDA BHARGAVI",
+    "email": "n191028@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191031",
+    "name": "MAnnEMPALLI JAnAnA SRI",
+    "email": "n191031@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191042",
+    "name": "PASUMARTI KRISHnAVEnI",
+    "email": "n191042@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191052",
+    "name": "VAnGA SAI LOKESH",
+    "email": "n191052@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191056",
+    "name": "PAnJA MOHAnA nAGA SIRISHA",
+    "email": "n191056@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191061",
+    "name": "KAnDIMALLA SWAPnA",
+    "email": "n191061@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191062",
+    "name": "MEEnIGE PRASHAnTHI",
+    "email": "n191062@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191069",
+    "name": "MAKInEEDI VEERA CHAKRA DHARAnI",
+    "email": "n191069@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191073",
+    "name": "GUnTUPALLI GREESHMA",
+    "email": "n191073@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191079",
+    "name": "KAnCHI HYMASRI",
+    "email": "n191079@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191084",
+    "name": "VADAPALLI JAYA SRI",
+    "email": "n191084@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191113",
+    "name": "B.Anantha Laxmi",
+    "email": "n191113@rguktn.ac.in"
+   },
+   {
+    "idNumber": "n191114",
+    "name": "Disuja Devi",
+    "email": "n191114@rguktn.ac.in"
+   }
 ]
 
 

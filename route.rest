@@ -2,8 +2,8 @@ POST https://cheeriobackend-v4ch.onrender.com/add-id
 Content-Type: application/json
 
 {
-      "name":"Y.SIddartesdfssdfha",
-      "idNumber":"N2O0ds15002df3",
+      "name":"Y.Siddhu",
+      "idNumber":"N20O0dfddff81",
       "email":"n200081@rguktn.ac.in"
 }
  
