@@ -66,22 +66,85 @@ const sendRegistrationEmail = async ({ email, id, photo, name , qrCodeImage}) =>
       to: email,
       subject: "You are invited to cheerio",
       html: `
-      <div style="background-color: #21D4FD; background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); width: 100%; overflow: hidden;">
-      <div style="display: flex; align-items: center; height: 100vh;">
-        <div style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; border-radius: 20px; background-color: #12192c;"">
-          <div style="padding: 4em; color: #fff;">
-            <h1 style="font-size: 40px; font-weight: 700; color: purple;">CHEERIO</h1>
-            <h1 style="font-size: 24px;">HI, ${name} You Are Invited</h1>
-            <h2 style="font-size: 20px;">Let the Fest begin</h2>
-            <p style="font-size: 16px;">I am delighted to extend an invitation to you for the upcoming fest named "Cheerio" organized by our Computer Science and Engineering (CSE) department.</p>
-            <h1 style="font-size: 20px;">Name: ${name}</h1>
-            <h1 style="font-size: 20px;">ID: ${id}</h1>
-            <h1 style="font-size: 20px;">Email: ${email}</h1>
-            <img src="${photo}" alt="Preview" style="width: 100px; height: 100px;">
+      <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+      body {
+        background-color: #21D4FD;
+        background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+        width: 100%;
+        overflow: hidden;
+      }
+      .wrapper {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+      }
+      .form_container {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        border-radius: 20px;
+        background-color: #12192c;
+      }
+      .input_container {
+        padding: 4em;
+        color: #fff;
+      }
+      .input_container h1 {
+        font-size: 30px;
+      }
+      .submit {
+        background: #B721FF;
+        padding: 10px 30px;
+        color: #fff;
+        border: 2px solid #B721FF;
+        font-size: 16px;
+        border-radius: 20px;
+      }
+      .spooky_bg2 {
+        display: none;
+        background: url(https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324__340.jpg);
+        background-size: cover;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      #error {
+        color: #35b7a4;
+      }
+      @media (max-width: 768px) {
+        .spooky_bg {
+          display: none;
+        }
+        .spooky_bg2 {
+          display: block !important;
+          height: 300px;
+        }
+      }
+      .credit a {
+        text-decoration: none;
+        color: #B721FF;
+        font-weight: 800;
+      }
+      .credit {
+        margin: 10px;
+      }
+      </style>
+
+      <div class="wrapper">
+        <div class="container">
+          <div class="columns form_container">
+            <div class="column is-half spooky_bg2"></div>
+            <div class="column is-half input_container">
+              <h1 style="font-size: 40px; font-weight: 700; color: purple;">CHEERIO</h1>
+              <h1>HI, ${name} You Are Invited</h1>
+              <h2>Let the Fest begin</h2>
+              <p>I am delighted to extend an invitation to you for the upcoming fest named "Cheerio" organized by our Computer Science and Engineering (CSE) department.</p>
+              <h1>Name: ${name}</h1>
+              <h1>ID: ${id}</h1>
+              <h1>Email: ${email}</h1>
+              <img src="${photo}" alt="Preview" style="width: 100px; height: 100px;">
+            </div>
           </div>
         </div>
       </div>
-    </div>
       `,
     };
 {/* <h1>Name :${name}</h1>
