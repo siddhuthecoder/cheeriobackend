@@ -53,8 +53,8 @@ const sendRegistrationEmail = async ({
       host: "smtp.gmail.email",
       service: "gmail",
       auth: {
-        user: "codewithsiddhu@gmail.com",
-        pass: "lkcr lxda ghqe ylhh",
+        user: "edu.cse@rguktn.ac.in",
+        pass: "scax hrqg cpjh jofz",
       },
       tls: {
         rejectUnauthorized: false,
@@ -76,7 +76,7 @@ const sendRegistrationEmail = async ({
         <img src="cid:qrimage" alt="PreviewofQR" style=" width: 100px; height: 100px;">
         <img src="cid:photo" alt="PreviewofPhoto" style=" width: 100px; height: 100px;">
         <h3 style="color:white;font-size:22px">Let the Fest begin</h3>
-        <p style="color:white;font-size:20px">I am delighted to extend an invitation to you for the upcoming fest named "Cheerio" organized by our Computer Science and Engineering (CSE) department.</p>
+        <p style="color:white;font-size:20px">We are delighted to extend an invitation to you for the upcoming fest "Cheerio" organized by our Computer Science and Engineering (CSE) department.</p>
         <div class="mt-2 ml-2"><span id="error"></span></div>
         <div style="margin-bottom: 20px 0;color:white">Made with <span style="color: tomato; font-size: 20px;">❤</span> For RGUKTNs</div>
         
@@ -99,8 +99,8 @@ const sendRegistrationEmail = async ({
           cid: "photo", //same cid value as in the html img src
         },
         {
-          filename: "con.jpg",
-          path: "https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324__340.jpg",
+          filename: "invitation.jpg",
+          path: "https://cheerio24.vercel.app/INVITATIONADNO.png",
           cid: "bg",
         },
       ],
@@ -120,8 +120,8 @@ const sendemail = async ({ email, idNumber, name, id }) => {
       host: "smtp.gmail.email",
       service: "gmail",
       auth: {
-        user: "codewithsiddhu@gmail.com",
-        pass: "lnbe kvls fcvk cyti",
+        user: "edu.cse@rguktn.ac.in",
+        pass: "scax hrqg cpjh jofz",
       },
       tls: {
         rejectUnauthorized: false,
@@ -134,9 +134,9 @@ const sendemail = async ({ email, idNumber, name, id }) => {
       to: email,
       subject: "Cheerio Invitation",
       html: `
-      <h1>Cheerio Invitation</h1>
-      <h3>Please press the below button 👇</h3>
-      <a href='https://cheerio24.vercel.app/${id}'><button >Click to register</button>
+       <h1>Cheerio Invitation</h1>
+       <h3>Please press the below button 👇</h3>
+       <a href='https://cheerio24.vercel.app/${id}'><button >Click to register</button>
     
       `,
     };
