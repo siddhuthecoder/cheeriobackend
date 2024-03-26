@@ -20,13 +20,19 @@ mongoose
 // Registration route
 app.post("/register/:id", async (req, res) => {
   const { id } = req.params;
-  const { photo } = req.body;
+  const { photo, name, idNumber, email } = req.body;
 
   const qrUrl = `https://cheerio24.vercel.app/lunch/${id}`;
   const qrCodeImage = await QRCode.toDataURL(qrUrl);
 
   try {
-    const user = await Id.findByIdAndUpdate(id, { isReg: true, photo });
+    const user = await Id.Create(id, {
+      isReg: true,
+      photo,
+      name,
+      email,
+      idNumber,
+    });
     await sendRegistrationEmail({
       email: user.email,
       id: user.idNumber,
@@ -250,6 +256,6 @@ app.get("/count/:year", async (req, res) => {
   }
 });
 
-app.listen(4001, () => {
-  console.log(`Server listening on port 4001`);
+app.listen(4002, () => {
+  console.log(`Server listening on port 4002`);
 });
